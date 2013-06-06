@@ -1,6 +1,6 @@
-use Test::More tests => 1;
+use Test::More tests => 2;
 use Test::MockObject;
-
+use Net::HTTP::Spore;
 use Net::HTTP::Spore::Middleware::BaseUrl;
 
 subtest 'basic' => sub {
@@ -19,4 +19,17 @@ subtest 'basic' => sub {
     );
 
     $middleware->call($request);
+};
+
+subtest 'should be load without problem' => sub {
+    my $json = <<EOF;
+  {
+    "version":"1.0",
+    "base_url":"http://www.cpan.org"
+  }
+EOF
+
+    my $client = Net::HTTP::Spore->new_from_string($json);
+    eval { $client->enable( 'BaseUrl', base_url => "metacpan.org" ); };
+    ok( !$@, "should be elabled without problems" );
 };

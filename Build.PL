@@ -15,12 +15,12 @@ my %module_build_args = (
     "ExtUtils::MakeMaker" => "6.30",
     "Module::Build" => "0.3601"
   },
-  "dist_abstract" => "Spore Middleware to change the base_url",
+  "dist_abstract" => "Spore Middleware to change the base_url on the fly",
   "dist_author" => [
     "Tiago Peczenyj <tiago.peczenyj\@gmail.com>"
   ],
   "dist_name" => "Net-HTTP-Spore-Middleware-BaseUrl",
-  "dist_version" => "0.001",
+  "dist_version" => "0.02",
   "license" => "perl",
   "module_name" => "Net::HTTP::Spore::Middleware::BaseUrl",
   "recommends" => {},

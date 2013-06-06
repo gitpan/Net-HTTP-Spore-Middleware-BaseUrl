@@ -1,9 +1,9 @@
 
 
 This archive contains the distribution Net-HTTP-Spore-Middleware-BaseUrl,
-version 0.001:
+version 0.02:
 
-  Spore Middleware to change the base_url
+  Spore Middleware to change the base_url on the fly
 
 This software is copyright (c) 2013 by Weborama.
 

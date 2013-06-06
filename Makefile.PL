@@ -9,7 +9,7 @@ use ExtUtils::MakeMaker 6.30;
 
 
 my %WriteMakefileArgs = (
-  "ABSTRACT" => "Spore Middleware to change the base_url",
+  "ABSTRACT" => "Spore Middleware to change the base_url on the fly",
   "AUTHOR" => "Tiago Peczenyj <tiago.peczenyj\@gmail.com>",
   "BUILD_REQUIRES" => {
     "Module::Build" => "0.3601",
@@ -28,7 +28,7 @@ my %WriteMakefileArgs = (
     "Moose" => 0,
     "Net::HTTP::Spore" => 0
   },
-  "VERSION" => "0.001",
+  "VERSION" => "0.02",
   "test" => {
     "TESTS" => "t/*.t"
   }
